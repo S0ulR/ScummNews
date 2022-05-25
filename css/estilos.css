@@ -52,21 +52,34 @@ ul.menu li a:hover{
 
 .principal{
     margin-top: 10rem;
+    width: 100%;    
 }
 
-h1{
-    color: #ffffff;
-}
-
-h2{
-    color: #ffffff;
-}
-
-p{
-    color: #ffffff;
-}
-
-.link{
-    color: aqua;
+.links{
+    color: rgb(0, 255, 255);
     font-style: italic;
+}
+
+.links:hover{
+    color: rgb(0, 253, 169);
+}
+
+.tabla {
+    border: #ffffff solid 0.2rem;
+    margin-right: 33%;
+    margin-left: 33%;
+    margin-bottom: 1rem;
+}
+
+footer{
+    width: auto;
+    height: 6.25rem;
+    background-color: #041DFA;
+    margin-right: 0;
+}
+
+#copyright{
+    position: relative;
+    top: 70%;
+    bottom: 10%;
 }
