@@ -1,8 +1,8 @@
 header{
     background-color: #01094F;
     text-align: center;
-    padding: 5rem;
-    border: #000000 solid 1rem;
+    padding: 2rem;
+    height: auto;
 }
 
 body{
@@ -50,9 +50,19 @@ ul.menu li a:hover{
     color: #000000;
 }
 
-.principal{
-    margin-top: 10rem;
-    width: 100%;    
+.principal, .derecha, .izquierda {
+    margin-top: 10%;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .links{
@@ -161,4 +171,79 @@ span{
 .formulario textarea:focus{
   outline:0;
   border: 1px solid #fff;
+}
+
+.fecha{
+    font: italic;
+    font-size: small;
+    color: #a8a8a8;
+    float: right;
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav{
+        background-color: #061599;
+        border: #000000 solid 1rem;
+        height: auto;
+        padding: 20px;
+    }
+    
+    ul.menu li a{
+        background-color: #041DFA;
+        margin: 1rem;
+        width: 10rem;
+    }
+
+    ul.menu li{
+        display: inline;
+    }
+    
+    ul.menu li a{
+        display: inline-block;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .principal{
+        margin-top: 5%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section:after{
+        content: "";
+        display: table;
+    }
+    
+    .derecha{
+        margin-top: 5%;
+        margin-bottom: auto;
+        width: 15%;
+        float: right;
+        margin-right: 2%;
+        margin-left: 1%;
+    }
+    
+    .izquierda{
+        margin-top: 5%;
+        margin-bottom: auto;
+        width: 15%;
+        float: left;
+        margin-left: 2%;
+        margin-right: 1%;
+    }
+
+    iframe{
+        max-width: 90%;
+        max-height: 90%;
+    }
+
 }
