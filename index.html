@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scumm News - TP2 - Leandro Ruiz</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" media="only screen and (min-width:768px) and  (max-width: 1023px)" href="css/estilos.css">
+    <link rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/media-queries.css">
 </head>
 <body>
     <header>
@@ -13,15 +14,20 @@
         <h2>El diario número 1 de la isla!</h2>
         <p class="fecha">Lunes 26 de Mayo del 2022</p>
     </header>
-    <nav>
-        <ul class="menu">
-            <li><a href="Noticias.html">Noticias</a></li>
-            <li><a href="Navegacion.html">Navegación</a></li>
-            <li><a href="Lechuck.hetml">Le Chuck</a></li>
-            <li><a href="clasificados.html">Clasificados</a></li>
-            <li><a href="suscribe.html">Suscríbete</a></li>
-        </ul>
-    </nav>
+    <div class="respmenu">
+        <input type="checkbox">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+        <nav>
+            <ul class="menu">
+                <li><a href="Noticias.html">Noticias</a></li>
+                <li><a href="Navegacion.html">Navegación</a></li>
+                <li><a href="Lechuck.hetml">Le Chuck</a></li>
+                <li><a href="clasificados.html">Clasificados</a></li>
+                <li><a href="suscribe.html">Suscríbete</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <section class="principal">
             <h2>La saga de 'Monkey Island' tendrá una nueva entrega en 2022</h2>
@@ -61,7 +67,8 @@
         </section>
     </main>
     <aside class="publicidad">
-        
+        <h4>Barcos nuevos y usados de Stan, atendida por su propio dueño</h4>
+        <img src="https://scummpub.files.wordpress.com/2017/04/stan_vessels.gif" alt="">
     </aside>
     <div class="lechuck">
         <h2>Más leído...</h2>
